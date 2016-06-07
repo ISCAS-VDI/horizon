@@ -1,0 +1,14 @@
+// Specificity Required
+.fa.hz-icon-required {
+  font-size: 50%;
+  vertical-align: top;
+}
+
+.form-group:not(.has-error):not(.has-warning):not(.has-success) .hz-icon-required {
+  color: $brand-primary;
+}
+
+// Make sure the color is correct on selected workflow steps
+.active > a > .hz-icon-required {
+  color: $component-active-color;
+}
